@@ -20,6 +20,6 @@
 	<h1>Cluster Test</h1>
 	<p>You have visited this application <%= counter %> times.</p>
 	<br/>
-	<p>This page is being served from <b><%= request.getServerName() %>:<%= request.getServerPort() %></b></p>
+	<p>This page is being served from <b><%= System.getProperty("jboss.server.name") %></b></p>
 </body>
 </html>
